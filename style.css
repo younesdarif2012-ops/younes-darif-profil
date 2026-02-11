@@ -1,0 +1,154 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+    margin: 0;
+    padding: 0;
+    color: white;
+    line-height: 1.6;
+}
+
+.card {
+    background-color: #2a2a2a;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    padding: 20px 30px;
+    position: relative;
+    max-width: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #444;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+img {
+    display: block;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+.photo-gallery {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.photo {
+    width: 48%;
+    height: auto;
+    border-radius: 8px;
+    flex-shrink: 0;
+}
+
+.header-card {
+    background-image: url('Images/Vague%20Surf.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 250px;
+    position: relative;
+    height: 300px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9);
+}
+
+.profile-picture {
+    width: 200px;
+    border-radius: 50%;
+    border: 5px solid white;
+    background: #eee;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.school-logo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 100px;
+    opacity: 0.9;
+}
+
+.info-card h2 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.info-card p {
+    color: #cccccc;
+    text-align: center;
+}
+
+footer {
+    background: linear-gradient(135deg, #000000 0%, #333333 100%);
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+.social-media {
+    margin-bottom: 15px;
+}
+
+.social-media a {
+    margin: 0 20px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-media a:hover {
+    transform: scale(1.2);
+}
+
+.social-media img {
+    width: 50px;
+    height: auto;
+    filter: brightness(1);
+}
+
+footer p {
+    font-size: 1em;
+    margin: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin: 10px;
+        padding: 15px 20px;
+    }
+    .photo-gallery {
+        flex-direction: column;
+    }
+    .photo {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .profile-picture {
+        width: 150px;
+        top: 30px;
+    }
+    .header-card {
+        padding-top: 200px;
+        height: 250px;
+    }
+    .social-media a {
+        margin: 0 10px;
+    }
+}
